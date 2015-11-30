@@ -77,31 +77,6 @@ gliches. If you found glich you can help us report or improve this project.</b><
 <li>a lot of other enhancements and extensions...</li>
 </ul>
 
-<b>Example of µPlayer</b><br /><br />
-
-<div class="up-responsive">
-{{{new uPlayerPlaylist({
-uPlayer: "#jquery_uPlayer_0",
-cssSelectorAncestor: "#uP_container_0" 
-},[{ 
-title: "Core Song",
-artist: "Keygen Music",
-mp3: "http://uplayer.org/uplayer/media/core-goldwave5.12kg.mp3"
-}],{ 
-playlistOptions: {
-enableRemoveControls: true,
-showPlayList: true
-},
-swfPath: "http://uplayer.org/uplayer/swf/player.swf",
-solution: "html, flash",
-useStateClassSkin: true,
-useVisualizations: true,
-visualizerSolution: "html, xhr, flash",
-buttons: ["previous","play","stop","next","repeat","visualization-switch","fullscreen"], 
-playerSkin: "uP-dark-green",
-supplied: "mp3, oga, wav, m4v, m4v_720p, m4v_360p, m4v_180p",})}}}</div>
-<br /><br />
-
 <b>EXAMPLES (external media):</b><br /><br />
 
 <a href="html-extmedia/000.up_basic_noplaylist_100p.html">000.up_basic_noplaylist_100p.html</a><br />
