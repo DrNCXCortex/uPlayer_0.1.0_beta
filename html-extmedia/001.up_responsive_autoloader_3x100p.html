@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <meta name="generator" content="PSPad editor, www.pspad.com">
+   <title>uPlayer hyper example developing board...:D (Meow:) </title>
+   <link href="../css/up.skin.default/up.skin.default.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/upborderfix.js"></script>
+   <script type="text/javascript" src="../js/uplayer.js"></script>
+   <script type="text/javascript" src="../js/upresponsive.js"></script>   
+   <script type="text/javascript" src="../js/upvisualization.js"></script>
+
+   <style typle="text/css"">
+   
+   div.brd-dark {float:left;}
+   table.brd-dark-fix {float:left;}
+   div.brd-silver {float:left;}
+   table.brd-silver-fix {float:left;}
+   div.brd-clear {float:left;}
+   table.brd-clear-fix {float:left;}
+              
+   </style>
+
+   <script type="text/javascript">
+   //<![CDATA[                     
+
+  $(document).ready(function(){
+
+    //replaces JS schemas by working uPlayers
+    if (typeof responsive_players !== 'undefined' && $.isFunction(responsive_players)) responsive_players();
+
+    //fix uPlayer borders if is incorrect border on uPlayer skin
+    if (typeof uPfixBorders !== 'undefined' && $.isFunction(uPfixBorders)) uPfixBorders(); 
+ 
+    //fix uPlayer borders if is IE detected
+    if (typeof fixIEborders !== 'undefined' && $.isFunction(fixIEborders)) fixIEborders();
+
+    //load tvnoise if is enabled
+    if (typeof loadTvNoise !== 'undefined' && $.isFunction(loadTvNoise)) loadTvNoise()  
+
+    //load tvnoise if is enabled
+    if (typeof upVis_loader !== 'undefined' && $.isFunction(upVis_loader)) upVis_loader()  
+   });
+
+   //]]>
+   </script>
+
+  
+</head>
+<body>
+
+<b>Example 001: &micro;Player Responsive Loader (Take care for security)</b><br /><br />
+
+<div class="up-responsive">
+{{{new uPlayerPlaylist({
+	       uPlayer: "#jquery_uPlayer_0",
+	       cssSelectorAncestor: "#uP_container_0"   
+	    },[{         
+         title: "Wreck-it Ralph Trailer",
+			   artist: "Disney",
+			   m4v: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.mp4",
+			   m4v_1080p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.mp4",
+			   m4v_720p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.mp4",
+			   m4v_540p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_540p.mp4",
+			   m4v_360p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_360p.mp4",
+			   m4v_270p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_270p.mp4",
+			   m4v_180p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_180p.mp4",
+			   webmv: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.webm",
+			   ogv: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.ogv",
+	       poster: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.jpg"
+      },{
+         title: "Avatar Trailer",
+			   artist: "J.CAMERON",
+			   m4v: "http://uplayer.org/uplayer/media/avatar_trailer_1080p.mp4",
+	       poster: "http://uplayer.org/uplayer/media/avatar_trailer_1080p.jpg"
+      },{             
+         title: "Saturn",
+			   artist: "uPlayer",
+			   m4v: "http://uplayer.org/uplayer/media/saturn_1080p.mp4",
+			   webmv: "http://uplayer.org/uplayer/media/saturn_1080p.webm",
+	       poster: "http://uplayer.org/uplayer/media/saturn_1080p.png"
+      }],{                                 
+         playlistOptions: {
+            enableRemoveControls: true,
+            showPlayList: true
+         },
+  		   swfPath: "http://uplayer.org/uplayer/swf/swf/player.swf",
+         solution: "html, flash",
+		     supplied: "m4v, m4v_1080p, m4v_720p, m4v_540p, m4v_360p, m4v_270p, m4v_180p",
+         playerSize: "100p",
+    
+         playerSkin: "uP-dark-white",
+    
+         useVisualizations: false, 
+         useTvNoise: true,
+         visualizerSolution: "html, xhr",
+
+         buttons: ["plus","minus","previous","play","stop","next","repeat","fullscreen","slow","fast","mute","volume-switch",,"screen-switch","playlist-switch"],
+
+ 
+         simulationMode: false,
+         showDebugSystem: false,    
+         
+		     useStateClassSkin: true,
+		     autoBlur: false,
+		     smoothPlayBar: true,
+		     keyEnabled: true,
+		     audioFullScreen: true,
+         pauseOthersPlayers: false,
+         loop: true         
+	    })}}}
+</div>
+<div class="up-responsive">
+{{{new uPlayerPlaylist({
+	       uPlayer: "#jquery_uPlayer_1",
+	       cssSelectorAncestor: "#uP_container_1"   
+	    },[{         
+         title: "Wreck-it Ralph Trailer",
+			   artist: "Disney",
+			   m4v: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.mp4",
+			   m4v_1080p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.mp4",
+			   m4v_720p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.mp4",
+			   m4v_540p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_540p.mp4",
+			   m4v_360p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_360p.mp4",
+			   m4v_270p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_270p.mp4",
+			   m4v_180p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_180p.mp4",
+			   webmv: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.webm",
+			   ogv: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.ogv",
+	       poster: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.jpg"
+      },{
+         title: "Avatar Trailer",
+			   artist: "J.CAMERON",
+			   m4v: "http://uplayer.org/uplayer/media/avatar_trailer_1080p.mp4",
+	       poster: "http://uplayer.org/uplayer/media/avatar_trailer_1080p.jpg"
+      },{             
+         title: "Saturn",
+			   artist: "uPlayer",
+			   m4v: "http://uplayer.org/uplayer/media/saturn_1080p.mp4",
+			   webmv: "http://uplayer.org/uplayer/media/saturn_1080p.webm",
+	       poster: "http://uplayer.org/uplayer/media/saturn_1080p.png"
+      }],{                                 
+         playlistOptions: {
+            enableRemoveControls: true,
+            showPlayList: true
+         },
+  		   swfPath: "../swf/player.swf",
+         solution: "html, flash",
+		     supplied: "m4v, m4v_1080p, m4v_720p, m4v_540p, m4v_360p, m4v_270p, m4v_180p",
+         playerSize: "100p",
+
+         playerSkin: "uP-silver-black",
+
+         buttons: ["plus","minus","previous","play","stop","next","repeat","fullscreen","slow","fast","mute","volume-switch",,"screen-switch","playlist-switch"],
+    
+         useVisualizations: false, 
+         useTvNoise: true,
+
+         simulationMode: false,
+         showDebugSystem: false,    
+         
+		     useStateClassSkin: true,
+		     autoBlur: false,
+		     smoothPlayBar: true,
+		     keyEnabled: true,
+		     audioFullScreen: true,
+         pauseOthersPlayers: false,
+         loop: true         
+	    })}}}
+</div>
+<div class="up-responsive">
+{{{new uPlayerPlaylist({
+	       uPlayer: "#jquery_uPlayer_2",
+	       cssSelectorAncestor: "#uP_container_2"   
+	    },[{         
+         title: "Wreck-it Ralph Trailer",
+			   artist: "Disney",
+			   m4v: "../media/wreck-it_ralph_trailer_1080p.mp4",
+			   m4v_1080p: "../media/wreck-it_ralph_trailer_1080p.mp4",
+			   m4v_720p: "../media/wreck-it_ralph_trailer_720p.mp4",
+			   m4v_540p: "../media/wreck-it_ralph_trailer_540p.mp4",
+			   m4v_360p: "../media/wreck-it_ralph_trailer_360p.mp4",
+			   m4v_270p: "../media/wreck-it_ralph_trailer_270p.mp4",
+			   m4v_180p: "../media/wreck-it_ralph_trailer_180p.mp4",
+			   webmv: "../media/wreck-it_ralph_trailer_720p.webm",
+			   ogv: "../media/wreck-it_ralph_trailer_720p.ogv",
+	       poster: "../media/wreck-it_ralph_trailer_1080p.jpg"
+      },{
+         title: "Avatar Trailer",
+			   artist: "J.CAMERON",
+			   m4v: "../media/avatar_trailer_1080p.mp4",
+	       poster: "../media/avatar_trailer_1080p.jpg"
+      },{             
+         title: "Saturn",
+			   artist: "Î¼Player",
+			   m4v: "../media/saturn_1080p.mp4",
+			   webmv: "../media/saturn_1080p.webm",
+	       poster: "../media/saturn_1080p.png"
+      }],{                                 
+         playlistOptions: {
+            enableRemoveControls: true,
+            showPlayList: true
+         },
+  		   swfPath: "../swf/player.swf",
+         solution: "html, flash",
+		     supplied: "m4v, m4v_1080p, m4v_720p, m4v_540p, m4v_360p, m4v_270p, m4v_180p",
+         playerSize: "100p",
+         playerSkin: "uP-dark-white",
+
+         buttons: ["plus","minus","previous","play","stop","next","repeat","fullscreen","slow","fast","mute","volume-switch",,"screen-switch","playlist-switch"],
+
+    
+         useVisualizations: false, 
+         useTvNoise: true,
+
+         simulationMode: false,
+         showDebugSystem: false,    
+         
+		     useStateClassSkin: true,
+		     autoBlur: false,
+		     smoothPlayBar: true,
+		     keyEnabled: true,
+		     audioFullScreen: true,
+         pauseOthersPlayers: false,
+         loop: true         
+	    })}}}
+</div>
+
+</body>
+</html>

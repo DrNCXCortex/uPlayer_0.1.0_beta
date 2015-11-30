@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <link href="../css/up.skin.default/up.skin.default.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/upborderfix.js"></script>
+   <script type="text/javascript" src="../js/uplayer.js"></script>
+   <script type="text/javascript" src="../js/upresponsive.js"></script>   
+   <script type="text/javascript" src="../js/upvisualization.js"></script>
+   <style typle="text/css"">
+   
+   div.brd-dark {float:left;}
+   table.brd-dark-fix {float:left;}
+   div.brd-silver {float:left;}
+   table.brd-silver-fix {float:left;}
+
+   table > tr > td { border-collapse:collapse;border-spacing:0;padding:0;margin:0;border:0px solid #000000; }
+   tr > td {border-spacing:0;padding:0;margin:0;border:0px solid #000000; }
+
+   </style>
+
+   <script type="text/javascript">
+   //<![CDATA[
+   
+   $(document).ready(function(){
+
+
+/******************************************************************************/
+/*  μPlayer js playlist multiple media video 100p all dark-skins              */
+/******************************************************************************/      
+
+      _uPlayerPlaylist_0 = new uPlayerPlaylist({
+	  	   uPlayer: "#jquery_uPlayer_0",
+		     cssSelectorAncestor: "#uP_container_0"   
+	    },[{         
+         title: "Intro",
+			   artist: "Goa",
+         mp3: "http://uplayer.org/uplayer/media/goa_intro_mix.mp3",
+			   oga: "http://uplayer.org/uplayer/media/goa_intro_mix.ogg",
+	       poster: "http://uplayer.org/uplayer/media/goa_intro_mix.jpg"
+      },{
+         title: "Narcis Dictionary",
+			   artist: "Keygen Music",
+         mp3: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.mp3",
+			   oga: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.ogg",
+	       wav: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.wav",
+	       poster: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.jpg"
+      },{
+         title: "Core",
+			   artist: "Keygen Music",
+         mp3: "http://uplayer.org/uplayer/media/core-goldwave5.12kg.mp3",
+			   oga: "http://uplayer.org/uplayer/media/core-goldwave5.12kg.ogg",
+	       poster: "http://uplayer.org/uplayer/media/core-goldwave5.12kg.jpg"
+      }],{
+         playlistOptions: {
+            enableRemoveControls: true
+         },
+  		   swfPath: "../swf/player.swf",
+         swfPathRTMP: "../swf/rtmp_player.swf",
+         solution: "html, flash",
+		     supplied: "mp3, oga, wav",
+         playerSize: "250p",
+         
+         mediaVideoQualityFormatsPrefix: true,
+         
+         buttons: ["previous","play","stop","next","repeat","fullscreen","plus","minus","slow","fast","quality","mute","volume-switch","screen-switch","playlist-switch","visualization-switch"],
+
+        swfPathRevolt: "../swf/revolt.swf",
+        sampleAudioPath: "../media/samplewhite.mp3",
+        sampleNullAudioPath: "../media/null.wav",
+          
+         playerSkin: "uP-dark-red",
+         
+         allowLoadingIcon: true,
+         allowPlayIcon: true,
+    
+         useVisualizations: true, 
+         useTvNoise: true,
+         visualizerSolution: "flash",
+ 
+
+		     useStateClassSkin: true,
+		     autoBlur: false,
+		     smoothPlayBar: true,
+		     keyEnabled: true,
+		     audioFullScreen: true,
+         pauseOthersPlayers: false,
+         loop: true         
+	    });
+
+
+      //if not loaded visualizations then load it manually
+      upVis_loader();
+           
+/******************************************************************************/
+/*   μPlayer js end                                                           */
+/******************************************************************************/
+   });
+
+   //]]>
+   </script>
+</head>
+<body>
+
+<table><tr><td>
+
+<!-- Example 000 Dark Green... basic example -->
+
+<b>&micro;Player visualizations Flash only solution:</b><br /><br />
+
+<div class="brd-dark">
+<div id="uP_container_0" class="uP-video uP-dark-red" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+    		<div class="uP-no-solution">
+		 	    <span>Update Required</span>
+		      To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+    		</div>
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-loading-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>                                                      
+		  <div id="jquery_uPlayer_0" class="uP-uPlayer">
+        <img id="uP_poster_0" style="">
+        <audio id="uP_audio_0" preload="metadata" title=""></audio>
+        <video id="uP_video_0" preload="metadata" style="" src="" title=""></video>
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+</td></tr><tr><td>
+
+<div style="float:none;width:640px;display:table;">
+Revolt Flash visualizations license: <a href="http://creativecommons.org/licenses/by-sa/2.5/">http://creativecommons.org/licenses/by-sa/2.5/</a>
+and homepage: <a href="http://www.anttikupila.com/flash/revolt-actionscript-3-based-spectrum-analyzer-source-released/">http://www.anttikupila.com/flash/revolt-actionscript-3-based-spectrum-analyzer-source-released/</a>
+</div> 
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <link href="../css/up.skin.default/up.skin.default.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/upborderfix.js"></script>
+   <script type="text/javascript" src="../js/uplayer.js"></script>
+   <script type="text/javascript" src="../js/upresponsive.js"></script>   
+   <script type="text/javascript" src="../js/upvisualization.js"></script>
+   <style typle="text/css"">
+   
+   div.brd-dark {float:none;}
+   table.brd-dark-fix {float:none;}
+   div.brd-silver {float:none;}
+   table.brd-silver-fix {float:none;}
+
+   </style>
+
+   <script type="text/javascript">
+   //<![CDATA[
+   
+   $(document).ready(function(){
+
+
+/******************************************************************************/
+/*  μPlayer js playlist multiple media video 100p all dark-skins              */
+/******************************************************************************/      
+
+   
+      _uPlayerPlaylist_0 = new uPlayerPlaylist({
+	  	   uPlayer: "#jquery_uPlayer_0",
+		     cssSelectorAncestor: "#uP_container_0"   
+	    },[{         
+         title: "Intro",
+			   artist: "Goa",
+         mp3: "../media/goa_intro_mix.mp3",
+			   oga: "../media/goa_intro_mix.ogg",
+	       poster: "../media/goa_intro_mix.jpg"
+      },{
+         title: "Narcis Dictionary",
+			   artist: "Keygen Music",
+         mp3: "../media/grand_lord-narcis_dictionary.mp3",
+			   oga: "../media/grand_lord-narcis_dictionary.ogg",
+	       wav: "../media/grand_lord-narcis_dictionary.wav",
+	       poster: "../media/grand_lord-narcis_dictionary.jpg"
+      },{
+         title: "Saturn",
+			   artist: "μPlayer",
+			   m4v: "../media/saturn_1080p.mp4",
+			   webmv: "../media/saturn_1080p.webm",
+	       poster: "../media/saturn_1080p.png"
+      },{             
+         title: "Core",
+			   artist: "Keygen Music",
+         mp3: "../media/core-goldwave5.12kg.mp3",
+			   oga: "../media/core-goldwave5.12kg.ogg",
+	       poster: "../media/core-goldwave5.12kg.jpg"
+      },{             
+         title: "UCF",
+			   artist: "Keygen Music",
+         mp3: "../media/ucf-capture_and_send_2003kg.mp3",
+			   oga: "../media/ucf-capture_and_send_2003kg.ogg",
+	       poster: "../media/datamachina_animation.gif"
+      },{                                           
+	       title: "Bulb Light",
+	       artist: "www.beachfrontbroll.com",
+	       m4v: "../media/lightbulb_720p.mp4",
+	       ogv: "../media/lightbulb_720p.ogv",
+	       poster: "../media/lightbulb_1080p.png"
+      },{             
+	       title: "TSAR Nuclear Explosion",
+	       artist: "CCCP",
+	       m4v: "../media/tsar_nuclear_test_explosion_240p.mp4",
+		     m4v_180p: "../media/tsar_nuclear_test_explosion_180p.mp4",
+	       webmv: "../media/tsar_nuclear_test_explosion_240p.webm",
+	       poster: "../media/tsar_nuclear_test_explosion_240p.png"
+      },{             
+	       title: "μP-Cube",
+	       artist: "μPlayer",
+	       m4v: "../media/uplayer_test_video_540p.mp4",
+	       m4v_270p: "../media/uplayer_test_video_270p.mp4",
+	       poster: "../media/uplayer_test_video_540p.png"
+      },{                                           
+         title: "Screen Debug",
+			   artist: "μPlayer",
+		     m4v: "../media/debug_video_480p.mp4",
+         webmv: "../media/debug_video_480p.webm",
+   	     ogv: "../media/debug_video_480p.ogv"
+      }],{
+         playlistOptions: {
+            enableRemoveControls: true
+         },
+  		   swfPath: "../swf/player.swf",
+         swfPathRTMP: "../swf/rtmp_player.swf",
+         solution: "flash", 
+		     supplied: "m4v, m4v_270p, m4v_180p, webmv, ogv, oga, mp3",
+         playerSize: "150p",
+         playerSkin: "uP-silver-blue",
+         
+         useVisualizations: false,
+         useTvNoise: true,
+         allowLoadingIcon: true,
+         allowPlayIcon: true,
+    
+         useVisualizations: false, 
+    
+		     useStateClassSkin: true,
+		     autoBlur: false,
+		     smoothPlayBar: true,
+		     keyEnabled: true,
+		     audioFullScreen: true,
+         pauseOthersPlayers: false,
+         loop: true         
+	    });
+   
+/******************************************************************************/
+/*   μPlayer js end                                                           */
+/******************************************************************************/
+   });
+
+   //]]>
+   </script>
+</head>
+<body>
+
+<b>&micro;Player Flash Solution preview example (150p screen size):</b><br />
+This example presenting how works &micro;Player in Flash Solution only.<br /><br />
+
+<!-- Example 000 Dark Green... basic example -->
+
+<div class="brd-silver">
+<div id="uP_container_0" class="uP-video" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-loading-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>                                                      
+		  <div id="jquery_uPlayer_0" class="uP-uPlayer">
+        <canvas class="uP_canvas_0"></canvas>
+        <img id="uP_poster_0" style="">
+        <audio id="uP_audio_0" preload="metadata" title=""></audio>
+        <video id="uP_video_0" preload="metadata" style="" src="" title=""></video>
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <meta name="generator" content="PSPad editor, www.pspad.com">
+   <title>uPlayer hyper example developing board...:D (Meow:) </title>
+   <link href="../css/up.skin.default/up.skin.default.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/upborderfix.js"></script>
+   <script type="text/javascript" src="../js/uplayer.js"></script>
+   <script type="text/javascript" src="../js/upresponsive.js"></script>   
+   <script type="text/javascript" src="../js/upvisualization.js"></script>
+
+   <style typle="text/css"">
+   
+    table > tr > td { border-collapse:collapse;border-spacing:0;padding:0;margin:0;border:0px solid #000000; }
+    tr > td {border-spacing:0;padding:0;margin:0;border:0px solid #000000; }
+       
+   </style>
+
+
+   <script type="text/javascript">
+   //<![CDATA[                     
+
+   $(document).ready(function(){
+
+/******************************************************************************/
+/*  μPlayer playlist audio media 0p default dark-white                        */
+/******************************************************************************/      
+      var _uPlayerPlaylist_000 = new uPlayerPlaylist({
+	       uPlayer: "#jquery_uPlayer_0",
+	       cssSelectorAncestor: "#uP_container_0"   
+	    },[{         
+         title: "Narcis Dictionary",
+			   artist: "Keygen Music",
+         mp3: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.mp3",
+			   oga: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.ogg",
+	       wav: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.wav",
+	       poster: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.jpg"
+
+      }],{                                 
+         playlistOptions: {
+            enableRemoveControls: true,
+            showPlayList: true
+         },
+  		   swfPath: "../swf/player.swf",
+         solution: "html, flash",
+		     supplied: "mp3, oga, wav",
+         playerSize: "100p",
+         
+         useVisualizations: true, 
+         showFpsVisualizations: true, 
+         visualizerSolution: "xhr",
+    
+         useTvNoise: true,
+
+		     useStateClassSkin: true,
+		     autoBlur: false,
+		     smoothPlayBar: true,
+		     keyEnabled: true,
+		     audioFullScreen: true,
+         pauseOthersPlayers: false,
+         loop: true         
+	    });
+
+
+      //if not loaded visualizations then load it manually
+      upVis_loader();
+
+
+   });
+
+   //]]>
+   </script>
+
+  
+</head>
+<body>
+
+  
+<b>&micro;Player visualizations XHR (XMLHttpRequest) only solution:</b><br />
+(Could be Unstable, do not use many media input because you can overload browser memory.)<br /><br />
+
+<!-- Example 000 ... basic example -->
+
+<div class="brd-dark">
+<div id="uP_container_0" class="uP-video uP-dark-green" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+    		<div class="uP-no-solution">
+		 	    <span>Update Required</span>
+		      To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+    		</div>
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-video-load-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>
+		  <div id="jquery_uPlayer_0" class="uP-uPlayer">
+        <img id="uP_poster_0" style="">
+        <audio id="uP_audio_0" preload="metadata" title=""></audio>
+        <video id="uP_video_0" preload="metadata" style="" src="" title=""></video>
+
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

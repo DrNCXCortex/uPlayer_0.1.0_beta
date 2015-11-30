@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <link href="../css/up.skin.default/up.skin.default.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/upborderfix.js"></script>
+   <script type="text/javascript" src="../js/uplayer.js"></script>
+   <script type="text/javascript" src="../js/upresponsive.js"></script>   
+   <script type="text/javascript" src="../js/upvisualization.js"></script>
+   <style typle="text/css"">
+   
+   div.brd-dark {float:none;}
+   table.brd-dark-fix {float:none;}
+   div.brd-silver {float:none;}
+   table.brd-silver-fix {float:none;}
+   div.brd-clear {float:none;}
+   table.brd-clear-fix {float:none;}
+       
+   </style>
+
+   <script type="text/javascript">
+   //<![CDATA[
+   
+   $(document).ready(function(){
+
+
+/******************************************************************************/
+/*  μPlayer js playlist multiple media video 100p all dark-skins              */
+/******************************************************************************/      
+
+   var players_containers = document.getElementsByClassName('uP-video'); 
+   var players = document.getElementsByClassName('uP-uPlayer');
+
+   var _uPlayerSizes = ["0p100p","0p150p","0p200p","0p250p","0p300p"];
+   var _uPlayerPlaylist = new Array(); 
+   var _uPlayerButtons = [["repeat","play","stop","screen-switch","volume-switch","quality","playlist-switch"],
+   ["previous","play","stop","next","repeat","fullscreen","quality","volume-switch","screen-switch","playlist-switch"],
+   ["previous","play","stop","next","repeat","fullscreen","plus","minus","slow","fast","quality","volume-switch","screen-switch","playlist-switch"],
+   ["previous","play","stop","next","separator","empty","repeat","fullscreen","plus","minus","slow","fast","quality","mute","volume-switch","screen-switch","playlist-switch"],
+   ["plus","minus","separator","empty","empty","empty","previous","play","stop","next","separator","empty","repeat","fullscreen","slow","fast","quality","mute","volume-switch","screen-switch","playlist-switch"]]; 
+
+   for(var i=0; i<players_containers.length; i++){
+    
+      _uPlayerPlaylist[i] = new uPlayerPlaylist({
+	  	   uPlayer: "#"+players[i].id,
+		     cssSelectorAncestor: "#"+players_containers[i].id   
+	    },[{         
+         title: "Intro",
+			   artist: "Goa",
+         mp3: "http://uplayer.org/uplayer/media/goa_intro_mix.mp3",
+			   oga: "http://uplayer.org/uplayer/media/goa_intro_mix.ogg",
+	       poster: "http://uplayer.org/uplayer/media/goa_intro_mix.jpg"
+      },{
+         title: "Narcis Dictionary",
+			   artist: "Keygen Music",
+         mp3: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.mp3",
+			   oga: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.ogg",
+	       wav: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.wav",
+	       poster: "http://uplayer.org/uplayer/media/grand_lord-narcis_dictionary.jpg"
+      },{             
+         title: "Core",
+			   artist: "Keygen Music",
+         mp3: "http://uplayer.org/uplayer/media/core-goldwave5.12kg.mp3",
+			   oga: "http://uplayer.org/uplayer/media/core-goldwave5.12kg.ogg",
+	       poster: "http://uplayer.org/uplayer/media/core-goldwave5.12kg.jpg"
+      },{             
+         title: "UCF",
+			   artist: "Keygen Music",
+         mp3: "http://uplayer.org/uplayer/media/ucf-capture_and_send_2003kg.mp3",
+			   oga: "http://uplayer.org/uplayer/media/ucf-capture_and_send_2003kg.ogg",
+	       poster: "http://uplayer.org/uplayer/media/datamachina_animation.gif"
+      }],{
+         playlistOptions: {
+            enableRemoveControls: true,
+            showPlayList: false
+         },
+  		   swfPath: "../swf/player.swf",
+         swfPathRTMP: "../swf/rtmp_player.swf",
+         solution: "html, flash",
+		     supplied: "m4v, webmv, ogv, oga, mp3",
+         playerSize: _uPlayerSizes[i],
+         buttons: _uPlayerButtons[i],
+         
+         useVisualizations: false,
+         useTvNoise: true,
+         allowLoadingIcon: true,
+         allowPlayIcon: true,
+    
+		     useStateClassSkin: true,
+		     autoBlur: false,
+		     smoothPlayBar: true,
+		     keyEnabled: true,
+		     audioFullScreen: true,
+         pauseOthersPlayers: false,
+         loop: true         
+	    });
+   }
+/******************************************************************************/
+/*   μPlayer js end                                                           */
+/******************************************************************************/
+   });
+
+   //]]>
+   </script>
+</head>
+<body>
+
+<b>&micro;Player Dark Skin Audio Only sizes 0p100p, 0p150p, 0p200p, 0p250p, 0p300p:</b><br />
+This example presenting audio only initial sizes, could be switched back to screen mode. (Also is customized buttons.)<br />
+<!-- Example 000 Dark Green... basic example -->
+<br />
+<div class="brd-dark">
+<div id="uP_container_0" class="uP-video uP-dark-green" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-loading-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>
+		  <div id="jquery_uPlayer_0" class="uP-uPlayer">
+        <canvas class="uP_canvas_0"></canvas>
+        <img id="uP_poster_0" style="">
+        <audio id="uP_audio_0" preload="metadata" title=""></audio>
+        <video id="uP_video_0" preload="metadata" style="" src="" title=""></video>
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+<br />
+<!-- Example 001 Dark Red... basic example -->
+
+<div class="brd-dark">
+<div id="uP_container_1" class="uP-video uP-dark-red" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-loading-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>
+		  <div id="jquery_uPlayer_1" class="uP-uPlayer">
+        <canvas class="uP_canvas_1"></canvas>
+        <img id="uP_poster_1" style="">
+        <audio id="uP_audio_1" preload="metadata" title=""></audio>
+        <video id="uP_video_1" preload="metadata" style="" src="" title=""></video>
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+<br />
+<!-- Example 002 Dark Blue ... basic example -->
+
+<div class="brd-dark">
+<div id="uP_container_2" class="uP-video uP-dark-blue" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-loading-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>
+		  <div id="jquery_uPlayer_2" class="uP-uPlayer">
+        <canvas class="uP_canvas_2"></canvas>
+        <img id="uP_poster_2" style="">
+        <audio id="uP_audio_2" preload="metadata" title=""></audio>
+        <video id="uP_video_2" preload="metadata" style="" src="" title=""></video>
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+<br />
+<!-- Example 003 Dark Yellow ... basic example -->
+
+<div class="brd-dark">
+<div id="uP_container_3" class="uP-video uP-dark-yellow" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-loading-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>
+		  <div id="jquery_uPlayer_3" class="uP-uPlayer">
+        <canvas class="uP_canvas_3"></canvas>
+        <img id="uP_poster_3" style="">
+        <audio id="uP_audio_3" preload="metadata" title=""></audio>
+        <video id="uP_video_3" preload="metadata" style="" src="" title=""></video>
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+<br />
+<!-- Example 003 Dark Orange ... basic example -->
+
+<div class="brd-dark">
+<div id="uP_container_4" class="uP-video uP-dark-orange" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-loading-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>
+		  <div id="jquery_uPlayer_4" class="uP-uPlayer">
+        <canvas class="uP_canvas_4"></canvas>
+        <img id="uP_poster_4" style="">
+        <audio id="uP_audio_4" preload="metadata" title=""></audio>
+        <video id="uP_video_4" preload="metadata" style="" src="" title=""></video>
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+

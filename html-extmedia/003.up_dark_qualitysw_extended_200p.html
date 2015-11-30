@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <link href="../css/up.skin.default/up.skin.default.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src="../js/upborderfix.js"></script>
+   <script type="text/javascript" src="../js/uplayer.js"></script>
+   <script type="text/javascript" src="../js/upresponsive.js"></script>   
+   <script type="text/javascript" src="../js/upvisualization.js"></script>
+   <style typle="text/css"">
+   
+   div.brd-dark {float:left;}
+   table.brd-dark-fix {float:left;}
+   div.brd-silver {float:left;}
+   table.brd-silver-fix {float:left;}
+
+   </style>
+
+   <script type="text/javascript">
+   //<![CDATA[
+   
+   $(document).ready(function(){
+
+
+/******************************************************************************/
+/*  μPlayer js playlist multiple media video 100p all dark-skins              */
+/******************************************************************************/      
+
+      _uPlayerPlaylist_0 = new uPlayerPlaylist({
+	  	   uPlayer: "#jquery_uPlayer_0",
+		     cssSelectorAncestor: "#uP_container_0"   
+	    },[{         
+         title: "Wreck-it Ralph Trailer",
+			   artist: "Disney",
+			   m4v: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.mp4",
+			   m4v_1080p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.mp4",
+			   m4v_720p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.mp4",
+			   m4v_540p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_540p.mp4",
+			   m4v_360p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_360p.mp4",
+			   m4v_270p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_270p.mp4",
+			   m4v_180p: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_180p.mp4",
+			   webmv: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.webm",
+			   ogv: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_720p.ogv",
+	       poster: "http://uplayer.org/uplayer/media/wreck-it_ralph_trailer_1080p.jpg"
+      },{
+         title: "Avatar Trailer",
+			   artist: "J.CAMERON",
+			   m4v: "http://uplayer.org/uplayer/media/avatar_trailer_1080p.mp4",
+	       poster: "http://uplayer.org/uplayer/media/avatar_trailer_1080p.jpg"
+      },{             
+         title: "Saturn",
+			   artist: "μPlayer",
+			   m4v: "http://uplayer.org/uplayer/media/saturn_1080p.mp4",
+			   webmv: "http://uplayer.org/uplayer/media/saturn_1080p.webm",
+	       poster: "http://uplayer.org/uplayer/media/saturn_1080p.png"
+      },{             
+	       title: "Bulb Light",
+	       artist: "www.beachfrontbroll.com",
+	       m4v: "http://uplayer.org/uplayer/media/lightbulb_720p.mp4",
+	       ogv: "http://uplayer.org/uplayer/media/lightbulb_720p.ogv",
+	       poster: "http://uplayer.org/uplayer/media/lightbulb_1080p.png"
+      },{             
+	       title: "TSAR Nuclear Explosion",
+	       artist: "CCCP",
+	       m4v: "http://uplayer.org/uplayer/media/tsar_nuclear_test_explosion_240p.mp4",
+		     m4v_180p: "http://uplayer.org/uplayer/media/tsar_nuclear_test_explosion_180p.mp4",
+	       webmv: "http://uplayer.org/uplayer/media/tsar_nuclear_test_explosion_240p.webm",
+	       poster: "http://uplayer.org/uplayer/media/tsar_nuclear_test_explosion_240p.png"
+      },{             
+	       title: "μP-Cube",
+	       artist: "μPlayer",
+	       m4v: "http://uplayer.org/uplayer/media/uplayer_test_video_540p.mp4",
+	       m4v_270p: "http://uplayer.org/uplayer/media/uplayer_test_video_270p.mp4",
+	       poster: "http://uplayer.org/uplayer/media/uplayer_test_video_540p.png"
+      },{                                           
+         title: "Screen Debug",
+			   artist: "μPlayer",
+		     m4v: "http://uplayer.org/uplayer/media/debug_video_480p.mp4",
+         webmv: "http://uplayer.org/uplayer/media/debug_video_480p.webm",
+   	     ogv: "http://uplayer.org/uplayer/media/debug_video_480p.ogv"
+      }],{
+         playlistOptions: {
+            enableRemoveControls: true
+         },
+  		   swfPath: "../swf/player.swf",
+         swfPathRTMP: "../swf/rtmp_player.swf",
+         solution: "html, flash",
+		     supplied: "m4v, webmv, ogv, oga, mp3, m4v_180p, m4v_270p, m4v_360p, m4v_540p, m4v_720p, m4v_1080p",
+         playerSize: "200p",
+         playerSkin: "uP-dark-orange",
+         
+         mediaVideoQualityFormatsPrefix: true,
+         
+         buttons: ["previous","play","stop","next","repeat","fullscreen","plus","minus","slow","fast","quality","volume-switch","screen-switch","playlist-switch"],
+         
+         useVisualizations: false,
+         useTvNoise: true,
+         allowLoadingIcon: true,
+         allowPlayIcon: true,
+    
+         useVisualizations: false, 
+    
+		     useStateClassSkin: true,
+		     autoBlur: false,
+		     smoothPlayBar: true,
+		     keyEnabled: true,
+		     audioFullScreen: true,
+         pauseOthersPlayers: false,
+         loop: true         
+	    });
+   
+/******************************************************************************/
+/*   μPlayer js end                                                           */
+/******************************************************************************/
+   });
+
+   //]]>
+   </script>
+</head>
+<body>
+
+<b>&micro;Player Extended Controls Example (200p screen sizes):</b><br />
+This example presenting how look like &micro;Player with extended controls with Media Quality Sqitcher and extra Volume Controler, and other buttons.<br /><br />
+
+<!-- Example 000 Dark Green... basic example -->
+
+<div class="brd-dark">
+<div id="uP_container_0" class="uP-video uP-dark-green" role="application" aria-label="media player">
+	<div class="uP-type-playlist">
+    <div class="uP-media-wrapper">
+		  <div class="uP-video-play">
+			  <div class="uP-title" aria-label="title">Core</div>
+		  	<span class="uP-centerer"></span>
+        <button class="uP-video-play-icon" role="button" tabindex="0">play</button>
+        <div class="uP-loading-icon"></div>
+			  <div class="uP-volume-bar">
+				  <div class="uP-volume-bar-value"></div>
+		  	</div>
+		  </div>                                                      
+		  <div id="jquery_uPlayer_0" class="uP-uPlayer">
+        <canvas class="uP_canvas_0"></canvas>
+        <img id="uP_poster_0" style="">
+        <audio id="uP_audio_0" preload="metadata" title=""></audio>
+        <video id="uP_video_0" preload="metadata" style="" src="" title=""></video>
+      </div>    
+    </div>
+    <div class="uP-gui">
+		  <div class="uP-interface">
+			  <div class="uP-progress">
+				  <div class="uP-seek-bar">
+					  <div class="uP-play-bar"></div>
+				  </div>
+       	  <div class="uP-current-time" role="timer" aria-label="time"></div>
+ 	  		  <div class="uP-extratitle" aria-label="title"></div>
+  			  <div class="uP-duration" role="timer" aria-label="duration"></div>
+			  </div>
+		  	<div class="uP-controls-holder">
+			  	<div class="uP-controls">
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  	<div class="uP-playlist"><ul><li></li></ul></div>  
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
