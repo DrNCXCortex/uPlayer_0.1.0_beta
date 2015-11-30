@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -93,15 +92,6 @@ gliches. If you found glich you can help us report or improve this project.</b><
 <a href="html-extmedia/011.up_visual_XHRonly_150p.html">011.up_visual_XHRonly_150p.html</a><br />
 <a href="html-extmedia/012.up_dark_visual_flashonly_300p_html.html">012.up_dark_visual_flashonly_300p_html.html</a><br />
 <a href="html-extmedia/013.up_RTMP_live_flash_only_300p.html">013.up_RTMP_live_flash_only_300p.html</a><br /><br />
-
-<b>Donate:</b><br /><br />
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="A43BSQTQ9GW92">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-<br /><br />
 
 <b>Screenshots of uPlayer</b><br /><br />
 
